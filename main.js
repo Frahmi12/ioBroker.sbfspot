@@ -510,7 +510,7 @@ function DB_Connect(cb) {
 }
 
 function DB_GetInverters() {
-    var query = 'SELECT * from Inverters';
+    var query = 'SELECT * from Inverters;';
     numOfInverters = 0;
     adapter.log.debug(query);
     if (adapter.config.databasetype == 'mySQL' || adapter.config.databasetype == 'MariaDB') {
